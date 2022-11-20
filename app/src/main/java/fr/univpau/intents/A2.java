@@ -19,7 +19,15 @@ public class A2  extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent gameActivityIntent = new Intent(A2.this, A3.class);
-        startActivity(gameActivityIntent);
+        // on recuper la valeur
+        Intent mIntent = getIntent();
+        String mString = mIntent.getStringExtra("editText");
+
+        // passé les parametre dans l'intent que A1 nous a envoyé
+        mIntent = new Intent(A2.this, A3.class);
+        mIntent.putExtra("editText", mString);
+        startActivity(mIntent);
+
+        System.out.println("A2: " + mIntent.getStringExtra("editText"));
     }
 }
