@@ -4,4 +4,11 @@
     <string name="je_suis_la_premi_re_activit">Je suis la première activité</string>
     <string name="suivant">Suivant</string>
     <string name="votre_text_ici">Votre text ici</string>
+    <string name="spinner_valeur">Choisir</string>
+    <string name="envoyer">Envoyer</string>
+
+    <string-array name="liste_item">
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
 </resources>

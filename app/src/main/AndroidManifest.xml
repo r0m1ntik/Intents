@@ -43,6 +43,11 @@
         <activity
             android:name=".A5"
             android:exported="true"
+            android:label="Je suis la cinquieme activité">
+        </activity>
+        <activity
+            android:name=".A6"
+            android:exported="true"
             android:label="Je suis la derniere activité">
         </activity>
     </application>
