@@ -28,7 +28,7 @@ public class A1 extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
-        Foo.getInstance().setUserLogin("Roman");
+        Foo.getInstance().userLogin = "Roman";
         Foo.getInstance().estSympa = false;
 
         Intent mIntent = new Intent(this, A2.class);

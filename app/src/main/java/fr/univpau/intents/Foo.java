@@ -9,19 +9,7 @@ public class Foo extends Application {
     public String userLogin;
     public boolean estSympa;
 
-    public String getUserLogin() {
-        return userLogin;
-    }
-
-    public void setUserLogin(String userLogin) {
-        this.userLogin = userLogin;
-    }
-
-    public static Foo getInstance() {
-        if (singleton == null)
-            singleton = new Foo();
-        return singleton;
-    }
+    public static Foo getInstance() { return singleton; }
 
     @Override
     public final void onCreate() {

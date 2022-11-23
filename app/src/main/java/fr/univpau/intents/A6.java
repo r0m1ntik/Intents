@@ -24,11 +24,8 @@ public class A6 extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        // get the text
         Spinner mSpinner = findViewById(R.id.spinner_text);
         String stringToPassBack = mSpinner.getSelectedItem().toString();
-
-        // put the String to pass back into an Intent and close this activity
         Intent intent = new Intent();
         intent.putExtra("keyName", stringToPassBack);
         setResult(RESULT_OK, intent);

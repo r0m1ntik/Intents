@@ -28,7 +28,8 @@ public class A5 extends AppCompatActivity {
                 if (result.getResultCode() == Activity.RESULT_OK) {
                     Intent data = result.getData();
                     assert data != null;
-                    System.out.printf("L'utilisateur %s a selectionner : ----- %s, il est sympa ? %s%n", Foo.getInstance().getUserLogin(), data.getStringExtra("keyName"),
+                    System.out.printf("L'utilisateur %s a selectionner : ----- %s, il est sympa ? %s%n",
+                            Foo.getInstance().userLogin, data.getStringExtra("keyName"),
                             Foo.getInstance().estSympa);
                 }
             });
