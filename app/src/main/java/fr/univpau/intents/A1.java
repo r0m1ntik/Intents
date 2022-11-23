@@ -23,9 +23,15 @@ public class A1 extends AppCompatActivity implements View.OnClickListener {
         mSuivant.setOnClickListener(this);
     }
 
+
+
     @Override
     public void onClick(View v) {
-        Intent mIntent = new Intent(A1.this, A2.class);
+
+        Foo.getInstance().setUserLogin("Roman");
+        Foo.getInstance().estSympa = false;
+
+        Intent mIntent = new Intent(this, A2.class);
         // passé les parametre dans l'intent que A1 nous a envoyé
         mIntent.putExtra("editText", editText.getText().toString());
         System.out.println(editText.getText().toString() + " --- " + mIntent.getStringExtra("editText"));
